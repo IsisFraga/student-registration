@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Cadastro de Alunos</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                Caelum - Alunos
+            </h1>
+            <h3>
+                Sistema de cadastro de alunos
+            </h3>
+        </header>
+        <div class="register">
+            <legend class="caption"> 
+                Cadastro de alunos
+            </legend>
+            <!-- legend usend only with form -->
+            <form class="data">
+                <div class="name-input">
+                    <label for="name" class="specify">Nome</label>
+                    <input type ="name" name="nome" id="name"></input>
+                </div>
+                <div class="courses-input">
+                    <label for="courses" class="specify">Curso</label>
+                    <select name="courses" id="courses">
+                        <option value="0">Selecione o seu curso</option>
+                        <option value="01">WD-01 - Lógica de Programação</option>
+                        <option value="02">WD-43 - HTML e CSS</option>
+                        <option value="03">WD-47 - JavaScript Moderno</option>
+                        <option value="04">WD-49 - Angular 8</option>
+                        <option value="05">WD-51 - React e Redux</option>
+                    </select>
+                </div>
+            </form>
+            <button class="save-btn">
+                Salvar
+            </button>
+        </div>
+        <div class="list">
+            <div class="title-search">
+                <table class="table">
+                    <caption class="title">
+                        Listagem
+                    </caption>
+                    <thead>
+                        <tr class="principal">
+                           <td>Matrícula</td> 
+                           <td>Nome</td> 
+                           <td>Curso</td>
+                           <td>Opções</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td> 
+                            <td>Pedro</td> 
+                            <td>WD-47</td>
+                            <td>
+                                <button class="btn-remove">
+                                    Remover
+                                </button>
+                            </td>
+                         </tr>
+                    </tbody>
+                </table>
+                <input type="search" class="search" placeholder="Pesquisar">
+            </div>
+        </div>
+    </main>
+    <script	src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="JS/invalid.js"></script>
+    <script src="JS/addAlumn.js"></script>
+</body>
+</html>
