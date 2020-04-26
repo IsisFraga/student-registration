@@ -1,15 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fff;
     color: #000;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
 
 main {
-    margin: 2em auto;
+    margin: auto;
     align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1440px;
+    padding: 1em;
 }
+
+main >* {
+    width: calc(100% - 2em);
+}
+
+ /* main: 100% COM PADDING */ 
+
+  /* > -> filho de. asterisco = todos. */
+
+    /* filho de main: calc menos 2x padding */
+
+        /* neto de main: 100% sempre */
 
 header {
     margin-bottom: 3em;
